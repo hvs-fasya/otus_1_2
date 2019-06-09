@@ -5,7 +5,7 @@ import (
 )
 
 func TestUnpack(t *testing.T) {
-	svc := NewPackerSvc()
+	svc := NewPackerSvc(`\`)
 	tests := []struct {
 		packed string
 		want   string

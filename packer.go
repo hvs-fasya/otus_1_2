@@ -17,9 +17,9 @@ type PackerSvc struct {
 }
 
 //NewPackerSvc init packer service
-func NewPackerSvc() *PackerSvc {
+func NewPackerSvc(escape string) *PackerSvc {
 	return &PackerSvc{
-		EscapeSymbol: `\`,
+		EscapeSymbol: escape,
 	}
 }
 
